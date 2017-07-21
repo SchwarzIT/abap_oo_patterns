@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPATTERN</ARBGB>
+    <MASTERLANG>D</MASTERLANG>
+    <STEXT>Messages for Pattern talk @ABAP Coderetreat 2017</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>ABAP CodeRetreat is really cool!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>I&apos;m glad you are all here!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Worker &amp; has not enough experience (&amp;).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Filtering Workers for experience.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>After filtering for experience &amp; workers remain.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Filtering workers for more than &amp; free tasks.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Worker &amp; has not enough free tasks (&amp;).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZPATTERN</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>After filtering for free tasks &amp; workers remain.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
