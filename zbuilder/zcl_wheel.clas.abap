@@ -1,0 +1,20 @@
+CLASS zcl_wheel DEFINITION
+  PUBLIC
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS:
+      turn.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_wheel IMPLEMENTATION.
+
+
+  METHOD turn.
+    WRITE: 'Wheel turns', /.
+  ENDMETHOD.
+ENDCLASS.
