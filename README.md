@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Kaufland/abap_oo_patterns.svg?branch=master)](https://travis-ci.org/Kaufland/abap_oo_patterns)
+
 # ABAP OO Design Pattern
 
 This repository contains a small set of implementations of
