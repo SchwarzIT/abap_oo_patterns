@@ -77,13 +77,14 @@ CLASS zcl_car_builder IMPLEMENTATION.
     r_car = NEW #(
         i_wheels = wheels
         i_seats = seats
-        i_engine = engine
-        ).
+        i_engine = engine   ).
   ENDMETHOD.
 
 
   METHOD ensure_minimal_configuration.
-    DATA(missing_wheels) = lines( wheels ) - zcl_car=>min_wheel_count.
+    DATA: missing_wheels TYPE i.
+
+    missing_wheels = lines( wheels ) - zcl_car=>min_wheel_count.
     IF wheels IS INITIAL.
       add_wheels( zcl_car=>min_wheel_count ).
     ENDIF.

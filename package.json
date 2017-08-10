@@ -1,0 +1,21 @@
+{
+  "name": "abap_oo_patterns",
+  "version": "1.0.0",
+  "description": "Example implementations for oo patterns in abap",
+  "main": "index.js",
+  "scripts": {
+    "test": "abaplint **/*.abap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaufland/abap_oo_patterns"
+  },
+  "author": "Florian Barth & Alexander Flammer ",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kaufland/abap_oo_patterns/issues"
+  },
+  "devDependencies": {
+    "abaplint": "0.0.15"
+  }
+}

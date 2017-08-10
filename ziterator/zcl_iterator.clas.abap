@@ -69,7 +69,8 @@ CLASS ZCL_ITERATOR IMPLEMENTATION.
 
 
   METHOD zif_iterator~has_next.
-    IF check_predicates( me->zif_iterator~collection->get( me->zif_iterator~current_index + me->zif_iterator~increment ) ).
+    IF check_predicates( me->zif_iterator~collection->get(
+                            me->zif_iterator~current_index + me->zif_iterator~increment ) ).
       me->zif_iterator~current_index = me->zif_iterator~current_index + me->zif_iterator~increment.
       r_has_next = abap_true.
     ELSE.

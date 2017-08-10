@@ -46,7 +46,9 @@ CLASS ZCL_WORKER_FREE_TASKS_FILTER IMPLEMENTATION.
 
 
   METHOD log_exclusion.
-    DATA(free_tasks) = worker-max_tasks - worker-cur_tasks.
+    DATA: free_tasks TYPE i.
+
+    free_tasks = worker-max_tasks - worker-cur_tasks.
     log->log( VALUE #(
         msgid = 'ZPATTERN'
         msgno = '007'

@@ -40,8 +40,7 @@ CLASS ZCL_SALV_LOG IMPLEMENTATION.
           IMPORTING
             r_salv_table   = salv     " Basisklasse einfache ALV Tabellen
           CHANGING
-            t_table        = message_texts
-        ).
+            t_table        = message_texts ).
       CATCH cx_salv_msg.
     ENDTRY.
     salv->display( ).

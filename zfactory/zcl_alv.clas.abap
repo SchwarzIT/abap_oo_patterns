@@ -21,8 +21,7 @@ CLASS zcl_alv IMPLEMENTATION.
           IMPORTING
             r_salv_table   = salv_object
           CHANGING
-            t_table        = i_data
-        ).
+            t_table        = i_data  ).
       CATCH cx_salv_msg.
     ENDTRY.
 

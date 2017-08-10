@@ -28,31 +28,26 @@ START-OF-SELECTION.
       ( name = 'Peter'    experience = 2   cur_tasks = 1  max_tasks = 2 )
       ( name = 'Melanie'  experience = 5   cur_tasks = 4  max_tasks = 4 )
       ( name = 'Max'      experience = 5   cur_tasks = 4  max_tasks = 4 )
-      ( name = 'Marie'    experience = 10  cur_tasks = 5  max_tasks = 8 )
-   ).
+      ( name = 'Marie'    experience = 10  cur_tasks = 5  max_tasks = 8 ) ).
 
   log = NEW zcl_salv_log( ).
 
   exp_filter = NEW zcl_worker_experience_filter(
       i_log            = log
-      i_min_experience = p_minexp
-  ).
+      i_min_experience = p_minexp ).
 
   free_task_filter = NEW zcl_worker_free_tasks_filter(
       i_log            = log
-      i_min_free_tasks =  p_minfre
-  ).
+      i_min_free_tasks =  p_minfre ).
 
 
   exp_filter->filter(
     CHANGING
-      c_table = workers
-  ).
+      c_table = workers ).
 
 
   free_task_filter->filter(
     CHANGING
-      c_table = workers
-  ).
+      c_table = workers ).
 
   log->finish( ).

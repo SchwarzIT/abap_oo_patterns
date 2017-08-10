@@ -14,12 +14,14 @@ ENDCLASS.
 
 
 
-CLASS ZCL_BAL_LOG IMPLEMENTATION.
+CLASS zcl_bal_log IMPLEMENTATION.
 
 
   METHOD zif_log~finish.
 
-    CHECK messages IS NOT INITIAL.
+    IF messages IS INITIAL.
+      RETURN.
+    ENDIF.
 
     DATA: header    TYPE bal_s_log,
           handle    TYPE balloghndl,
