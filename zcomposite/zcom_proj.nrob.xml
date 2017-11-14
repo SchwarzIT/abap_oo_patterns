@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZCOM_PROJ</OBJECT>
+    <DOMLEN>ZPROJECT_ID</DOMLEN>
+    <PERCENTAGE>95.0</PERCENTAGE>
+    <BUFFER>X</BUFFER>
+    <NOIVBUFFER>00000010</NOIVBUFFER>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>D</LANGU>
+    <OBJECT>ZCOM_PROJ</OBJECT>
+    <TXT>IDs für Projektverwaltung as Composite Pattern Beispiel</TXT>
+    <TXTSHORT>Projeknummer</TXTSHORT>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>
