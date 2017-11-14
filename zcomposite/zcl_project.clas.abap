@@ -53,7 +53,6 @@ CLASS zcl_project DEFINITION
       display_in_tree IMPORTING i_tree TYPE REF TO cl_salv_tree,
 
       recreate_tree_table RETURNING VALUE(r_result) TYPE tty_display.
-    .
 
   PROTECTED SECTION.
     METHODS create_struct_representation
@@ -157,12 +156,11 @@ CLASS ZCL_PROJECT IMPLEMENTATION.
 
     nodes = i_tree->get_nodes( ).
     node = display_in_tree_internal(
-        i_nodes = nodes
-    ).
+        i_nodes = nodes ).
     TRY.
         node->get_children( ).
         node->expand( complete_subtree = abap_true ).
-      CATCH cx_salv_msg.  "
+      CATCH cx_salv_msg.
     ENDTRY.
   ENDMETHOD.
 
@@ -172,18 +170,16 @@ CLASS ZCL_PROJECT IMPLEMENTATION.
 
     i_nodes->add_node(
       EXPORTING
-        related_node   =  i_par_key   " Schlüssel zum verwanten Knoten
-        relationship   =  cl_gui_column_tree=>relat_last_child   " Knotenrelationen im Tree
+        related_node   =  i_par_key
+        relationship   =  cl_gui_column_tree=>relat_last_child
         data_row       =  create_struct_representation( )
       RECEIVING
-        node           =  r_node    " Knotenschlüssel
-    ).
+        node           =  r_node    ).
     LOOP AT components ASSIGNING <comp>.
       <comp>->display_in_tree_internal(
         EXPORTING
           i_nodes   = i_nodes
-          i_par_key = r_node->get_key( )
-      ).
+          i_par_key = r_node->get_key( ) ).
     ENDLOOP.
 
   ENDMETHOD.

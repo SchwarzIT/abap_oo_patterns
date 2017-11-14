@@ -65,7 +65,7 @@ CLASS lcl_event_handler IMPLEMENTATION.
         LEAVE TO screen 0.
       WHEN 'EXIT'.
         LEAVE PROGRAM.
-    ENDCASE..
+    ENDCASE.
   ENDMETHOD.
 
 ENDCLASS.
@@ -89,8 +89,7 @@ START-OF-SELECTION.
     IMPORTING
       r_salv_tree   = tree     " ALV: Tree model
     CHANGING
-      t_table       = outtab
-  ).
+      t_table       = outtab ).
   CREATE OBJECT dao.
 
 
