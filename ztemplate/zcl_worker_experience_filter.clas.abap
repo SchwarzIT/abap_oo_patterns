@@ -67,6 +67,6 @@ CLASS ZCL_WORKER_EXPERIENCE_FILTER IMPLEMENTATION.
 
 
   METHOD log_start_of_filter.
-    log->log( VALUE #( msgid = 'ZPATTERN'  msgno = '004' msgty = 'I') ).
+    log->log( VALUE #( msgid = 'ZPATTERN'  msgno = '004' msgty = 'I' ) ).
   ENDMETHOD.
 ENDCLASS.
